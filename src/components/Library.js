@@ -65,7 +65,7 @@ const Library = (props) => {
         dispatch(allBooksActions.initialFetch(data));
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [dispatch]);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
