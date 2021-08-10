@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: "sidebar main";
+  grid-gap: 1px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+  border-right: 2px solid grey;
+}
+.appbar {
+  grid-area: main;
+  /* position: sticky;
+  top: 0;
+  height: 15vh; */
+}
+/* .main {
+  grid-area: main;
+} */
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    /* grid-template-columns: 100%;
+    grid-template-rows: 10vh auto;
+    grid-template-areas:
+      "appbar"
+      "main"; */
+    display: flex;
+  }
+  .sidebar {
+    display: none;
+  }
+}

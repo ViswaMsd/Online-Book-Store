@@ -1,0 +1,26 @@
+th {
+  width: 25%;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+td {
+  width: 25%;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+table {
+  width: 95%;
+  /* border: 2px solid black; */
+}
+
+p {
+  font-size: smaller;
+}
+
+.book__details {
+}
+.img--list {
+  height: 100px;
+  width: 60px;
+  border-radius: 5px;
+}

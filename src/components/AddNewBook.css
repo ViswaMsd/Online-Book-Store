@@ -1,0 +1,9 @@
+.status {
+  font-size: 15px;
+  font-weight: 700;
+  color: green;
+  text-align: center;
+}
+.err {
+  color: orangered;
+}

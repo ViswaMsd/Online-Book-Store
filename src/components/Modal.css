@@ -1,0 +1,43 @@
+.overlay {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 90vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+.modalCard {
+  position: relative;
+  top: 45vh;
+  right: -50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  color: grey;
+
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+}
+img {
+  height: 170px;
+  width: 110px;
+  border-radius: 5px;
+}
+
+.modalDiv {
+  position: relative;
+}
+.closeIcon {
+  position: absolute;
+  top: 10px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .overlay {
+    top: 2vh;
+  }
+} */

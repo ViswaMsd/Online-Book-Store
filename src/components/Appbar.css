@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.view-action-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: grey;
+  border-radius: 5px;
+}
