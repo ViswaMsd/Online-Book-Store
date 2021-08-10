@@ -1,9 +1,8 @@
-import { Button, Paper, TextField } from "@material-ui/core";
-import { green, red } from "@material-ui/core/colors";
+import { Button, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory, useLocation, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { allBooksActions, modalActions } from "../redux-store/store";
 import "./AddNewBook.css";
 import useForm from "./customHooks/useForm";
@@ -48,10 +47,8 @@ function AddNewBook(props) {
   const dispatch = useDispatch();
   const history = useHistory();
   const books = useSelector((s) => s.allBooks.books);
-  const location = useLocation();
   const params = useParams();
-  // console.log(location);
-  // console.log(params.id);
+
   let initialFormState = {
     title: "",
     authors: "",
@@ -70,14 +67,8 @@ function AddNewBook(props) {
     };
   }
 
-  const {
-    formState,
-    setFormState,
-    inputChangeHandler,
-    errors,
-    setErrors,
-    validate,
-  } = useForm(initialFormState);
+  const { formState, setFormState, inputChangeHandler, errors, validate } =
+    useForm(initialFormState);
 
   const { authors, title, description, genre, imageLink } = formState;
 

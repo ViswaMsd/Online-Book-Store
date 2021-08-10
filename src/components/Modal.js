@@ -5,9 +5,8 @@ import "./Modal.css";
 import CloseIcon from "@material-ui/icons/Close";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import UpdateIcon from "@material-ui/icons/Update";
-import { red, white } from "@material-ui/core/colors";
 import { makeStyles } from "@material-ui/core/styles";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { allBooksActions, modalActions } from "../redux-store/store";
 import { useHistory } from "react-router-dom";
 
@@ -77,7 +76,7 @@ function Modal(props) {
     <div className="overlay">
       <Paper className={styles.modalCard}>
         <div className="modalDiv">
-          <img src={props.book.imageLink}></img>
+          <img src={props.book.imageLink} alt={props.book.title}></img>
           <h4>
             {props.book.title}
             <Badge

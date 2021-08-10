@@ -5,17 +5,16 @@ import {
   Toolbar,
   Typography,
   IconButton,
-  Box,
+  
   Grid,
 } from "@material-ui/core";
-import { alpha, makeStyles } from "@material-ui/core/styles";
+import {  makeStyles } from "@material-ui/core/styles";
 import AppsIcon from "@material-ui/icons/Apps";
 import ListIcon from "@material-ui/icons/List";
 import Brightness4OutlinedIcon from "@material-ui/icons/Brightness4Outlined";
 import SearchIcon from "@material-ui/icons/Search";
 import PlayCircleOutlineOutlinedIcon from "@material-ui/icons/PlayCircleOutlineOutlined";
 import AddBoxOutlinedIcon from "@material-ui/icons/AddBoxOutlined";
-import SwapVerticalCircleIcon from "@material-ui/icons/SwapVerticalCircle";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 import Button from "@material-ui/core/Button";
@@ -28,7 +27,7 @@ import { withStyles } from "@material-ui/core/styles";
 import "./Appbar.css";
 import { useSelector, useDispatch } from "react-redux";
 import { darkModeActions, viewActions } from "../redux-store/store";
-import { useHistory, useLocation, useParams } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {

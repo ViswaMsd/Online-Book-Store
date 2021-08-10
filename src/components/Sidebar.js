@@ -16,8 +16,6 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { darkModeActions } from "../redux-store/store";
 import { useHistory, useLocation } from "react-router-dom";
-import { lightGreen } from "@material-ui/core/colors";
-// import { lightGrey } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   active: {

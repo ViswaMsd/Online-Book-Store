@@ -30,7 +30,7 @@ const allBooksSlice = createSlice({
     },
     updateBook(state, action) {
       state.books = state.books.map((book) => {
-        if (book._id == action.payload._id) return action.payload;
+        if (book._id === action.payload._id) return action.payload;
         return book;
       });
     },
